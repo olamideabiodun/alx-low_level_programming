@@ -1,0 +1,5 @@
+#!/bin/bash
+CFILE="main.c"
+gcc -S -masm=intel "$CFILE"
+ASFILE="${CFILE%.*}.s"
+mv "${CFILE%.*}.s" "ASFILE"
