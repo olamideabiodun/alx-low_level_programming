@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - returns the natural square root of a number
+ * _sqrt_recursive - checks if square root of the G is equal to n or greater
  * @n: input
  * @G: first guess
  *
@@ -23,6 +23,13 @@ int _sqrt_recursive(int n, int G)
 		return (_sqrt_recursive(n, G + 1));
 	}
 }
+
+/**
+ *  _sqrt_recursion - returns the natural square root of n
+ * @n: number to find the square root
+ *
+ * Return: sqrt of n or -1 if no natural sqrt
+ */
 
 int _sqrt_recursion(int n)
 {
