@@ -7,10 +7,9 @@
 #include <fcntl.h>
 #include <stdio.h>
 /**
- * close_errchk - closes a file descriptor and prints
- * an error message if it fails
+ * close_errchk - closes file_d and prints an error message if it fails
  *
- * @fd: file descriptor to close
+ * @filed: file descriptor to close
  *
  * Return: 0 on success, -1 on failure
  */
