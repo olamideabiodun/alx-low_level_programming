@@ -27,9 +27,10 @@ hash_table_t *hash_table_create(unsigned long int size)
     if (new_table->array == NULL)
     {
         // if calloc failed, free memory and return Null
-        free(new_table);
+        // free(new_table);
         return NULL;
     }
+    // initializing elements of array to null
     for (i = 0; i < size; i++)
     {
         new_table->array[i] = NULL;
