@@ -3,7 +3,10 @@
 
 
 def island_perimeter(grid):
-    """Defines the function that takes grid as an input to calculate the perimeter"""
+    """
+    Defines the function that takes grid as an input to
+    calculate the perimeter
+    """
     length_row = len(grid)
     length_column = len(grid[0])
     p = 0
@@ -12,7 +15,7 @@ def island_perimeter(grid):
     for x in range(0, length_row):
         for y in range(0, length_column):
             if grid[x][y] == 1:
-                p +=4
+                p += 4
                 if x != 0 and grid[x - 1][y] == 1:
                     connections += 1
                 if y != 0 and grid[x][y - 1] == 1:
